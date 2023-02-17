@@ -21,6 +21,12 @@ header a {
     margin: 20px;
 }
 
+nav {
+    text-align: center;
+    background-color: #373839;
+    padding: 20px 20px 20px 20px;
+} 
+
 main {
     max-width: 800px;
     margin: 0 auto;
@@ -33,11 +39,20 @@ img {
     margin: 10px;
 }
 
-h1 {
+div.name h1 {
     font-family: 'Playfair Display', Arial, Helvetica, sans-serif;;
 }
 
-a:link {color: #00296b; text-decoration: none;}
-a:visited {color: #003f88; text-decoration: none;}
+a:link {color: #ffffff; text-decoration: none;}
+a:visited {color: #949494; text-decoration: none;}
 a:hover {color: #00509d; text-decoration: none;}
 a:active {color: #fdc500; text-decoration: none;}
+
+a.currentPage {
+    color: #ffffffac;;
+}
+
+div.contact.a:link {color: #1e1a54; text-decoration: none;}
+a.contact:visited {color: #322d92; text-decoration: none;}
+a.contact:hover {color: #00509d; text-decoration: none;}
+a.contact:active {color: #fdc500; text-decoration: none;}
