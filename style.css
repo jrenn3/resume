@@ -1,37 +1,50 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display&family=Source+Sans+Pro:wght@400&display=swap");
 
+:root{
+    --black: #36393d;
+    --black2: #43464a;
+    --accent2: #707070;
+    --accent: #c3c3c3;
+}
+
 * {
-    color: #212529;
+    color: var(--black);
     font-family: Arial, Helvetica, sans-serif;
 }
+
+nav {
+    text-align: center;
+    background-color: var(--black);
+    padding: 16px 20px 16px 20px;
+} 
+
+nav div a {
+    padding: 20px 20px 20px 20px;
+    margin: 0 -4px 0 -4px;
+    height: 1000px;
+    width: 100%;
+} 
+
+nav div a:link {color: var(--accent); text-decoration: none; background-color: var(--black);}
+nav div a:visited {color: var(--accent2); text-decoration: none; background-color: var(--black);}
+nav div a:hover {color: white; text-decoration: none; 
+    /* background-color: var(--accent);  */
+    font-size: 30px;}
+nav div a:active {color: #fdc500; text-decoration: none; background-color: var(white);}
+
+nav div a.currentPage {color: white; font-size: 30px;}
+
+header {
+    text-align: center;
+    background-color: var(--accent);
+    padding: 0 0 20px 0;
+  } 
 
 @media (min-width: 800px){
   .h3, h3 {
       font-size: 1.6rem !important;
   }
 }
-
-header {
-  text-align: center;
-  background-color: #DEE2E6;
-  padding: 0 0 20px 0;
-} 
-
-footer {
-    text-align: center;
-    background-color: #DEE2E6;
-    padding: 20px 20px 20px 20px;
-} 
-
-header a {
-    margin: 20px;
-}
-
-nav {
-    text-align: center;
-    background-color: #373839;
-    padding: 20px 20px 20px 20px;
-} 
 
 main {
     max-width: 800px;
@@ -49,16 +62,13 @@ div.name h1 {
     font-family: 'Playfair Display', Arial, Helvetica, sans-serif;;
 }
 
-a:link {color: #ffffff; text-decoration: none;}
-a:visited {color: #949494; text-decoration: none;}
-a:hover {color: #00509d; text-decoration: none;}
-a:active {color: #fdc500; text-decoration: none;}
+.contact a:link {color: #1e1a54; text-decoration: none;}
+div.contact a.contact:visited {color: #322d92; text-decoration: none;}
+div.contact a.contact:hover {color: #00509d; text-decoration: none;}
+div.contact a.contact:active {color: #fdc500; text-decoration: none;}
 
-a.currentPage {
-    color: #ffffffac;
-}
-
-div.contact a:link {color: #1e1a54; text-decoration: none;}
-a.contact:visited {color: #322d92; text-decoration: none;}
-a.contact:hover {color: #00509d; text-decoration: none;}
-a.contact:active {color: #fdc500; text-decoration: none;}
+footer {
+    text-align: center;
+    background-color: var(--accent);
+    padding: 20px 20px 20px 20px;
+} 
