@@ -11,7 +11,13 @@
   }
 }
 
-header, footer {
+header {
+  text-align: center;
+  background-color: #DEE2E6;
+  padding: 0 0 20px 0;
+} 
+
+footer {
     text-align: center;
     background-color: #DEE2E6;
     padding: 20px 20px 20px 20px;
@@ -49,10 +55,10 @@ a:hover {color: #00509d; text-decoration: none;}
 a:active {color: #fdc500; text-decoration: none;}
 
 a.currentPage {
-    color: #ffffffac;;
+    color: #ffffffac;
 }
 
-div.contact.a:link {color: #1e1a54; text-decoration: none;}
+div.contact a:link {color: #1e1a54; text-decoration: none;}
 a.contact:visited {color: #322d92; text-decoration: none;}
 a.contact:hover {color: #00509d; text-decoration: none;}
 a.contact:active {color: #fdc500; text-decoration: none;}
