@@ -12,6 +12,14 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+
+
+header {
+    text-align: center;
+    background-color: var(--accent);
+    padding: 0 0 20px 0;
+  } 
+
 nav {
     text-align: center;
     background-color: var(--black);
@@ -21,8 +29,8 @@ nav {
 nav div a {
     padding: 20px 20px 20px 20px;
     margin: 0 -4px 0 -4px;
-    height: 1000px;
-    width: 100%;
+    height: 100px;
+    width: 100px;
 } 
 
 nav div a:link {color: var(--accent); text-decoration: none; background-color: var(--black);}
@@ -34,11 +42,17 @@ nav div a:active {color: #fdc500; text-decoration: none; background-color: var(w
 
 nav div a.currentPage {color: white; font-size: 30px;}
 
-header {
-    text-align: center;
-    background-color: var(--accent);
-    padding: 0 0 20px 0;
+header h1 {
+    padding: 20px 0 10px 0;
   } 
+
+header div.contact a {
+    margin: 0 5px 0 5px;
+}
+
+header div.contact a:link {color: var(--accent2); text-decoration: none;}
+header div.contact a:hover {color: white; text-decoration: none; }
+header div.contact a:active {color: #fdc500; text-decoration: none;}
 
 @media (min-width: 800px){
   .h3, h3 {
@@ -61,11 +75,6 @@ img {
 div.name h1 {
     font-family: 'Playfair Display', Arial, Helvetica, sans-serif;;
 }
-
-.contact a:link {color: #1e1a54; text-decoration: none;}
-div.contact a.contact:visited {color: #322d92; text-decoration: none;}
-div.contact a.contact:hover {color: #00509d; text-decoration: none;}
-div.contact a.contact:active {color: #fdc500; text-decoration: none;}
 
 footer {
     text-align: center;
