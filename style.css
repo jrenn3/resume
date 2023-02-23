@@ -26,18 +26,25 @@ nav {
     padding: 16px 20px 16px 20px;
 } 
 
+nav div {
+  display: flex;
+  justify-content: center;
+}
+
 nav div a {
-    padding: 20px 20px 20px 20px;
-    margin: 0 -4px 0 -4px;
-    height: 100px;
-    width: 100px;
+  padding: 20px 20px 20px 20px;
+  margin: 0 -4px 0 -4px;
+  display: flex;
+  width: 120px;
+  justify-content: center;
+  align-items: end;
 } 
 
 nav div a:link {color: var(--accent); text-decoration: none; background-color: var(--black);}
 nav div a:visited {color: var(--accent2); text-decoration: none; background-color: var(--black);}
 nav div a:hover {color: white; text-decoration: none; 
     /* background-color: var(--accent);  */
-    font-size: 30px;}
+    font-size: 24px;}
 nav div a:active {color: #fdc500; text-decoration: none; background-color: var(white);}
 
 nav div a.currentPage {color: white; font-size: 30px;}
